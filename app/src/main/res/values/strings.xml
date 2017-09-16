@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QRScanner</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_flash">闪光灯</string>
+    <string name="title_activity_result">ResultActivity</string>
+</resources>
