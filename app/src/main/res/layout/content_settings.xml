@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.github.tttony3.qrscanner.ResultActivity"
+    tools:showIn="@layout/activity_setting">
+
+    <TextView
+        android:text="文件 : "
+        android:textSize="18sp"
+        android:id="@+id/tv_result_title"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tv_file1"
+        android:layout_width="220dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="7dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_result_title"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_result_title" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="61dp"
+        android:layout_height="40dp"
+        android:text="添加"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_result_title"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:text="文件 : "
+        android:textSize="18sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="61dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/tv_result_title"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tv_file2"
+        android:layout_width="221dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="7dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintLeft_toRightOf="@+id/textView6"
+        android:layout_marginLeft="8dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="62dp"
+        android:layout_height="39dp"
+        android:text="添加"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:text="文件 : "
+        android:textSize="18sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="8dp"
+
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:id="@+id/textView7"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tv_file3"
+        android:layout_width="221dp"
+        android:layout_height="85dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView7"
+        android:layout_marginLeft="7dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        android:layout_marginStart="7dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="62dp"
+        android:layout_height="40dp"
+        android:text="添加"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView7"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="8dp" />
+
+
+    <TextView
+        android:textSize="18sp"
+        android:text="货号字段："
+        android:id="@+id/tv_f"
+        android:layout_width="92dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="90dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="8dp" />
+
+    <EditText
+        android:hint="多个字段以逗号分隔"
+        android:layout_width="176dp"
+        android:layout_height="41dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_f"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/editText1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_f" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="63dp"
+        android:layout_height="40dp"
+        android:text="确定"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText1" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:textSize="18sp"
+        android:layout_width="93dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:text="有无字段："
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_f" />
+
+    <EditText
+        android:hint="多个字段以逗号分隔"
+        android:layout_width="176dp"
+        android:layout_height="41dp"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView8"
+        app:layout_constraintLeft_toRightOf="@+id/textView8"
+        android:layout_marginLeft="6dp"
+        tools:layout_editor_absoluteX="106dp"
+        android:id="@+id/editText2" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="62dp"
+        android:layout_height="43dp"
+        android:layout_marginRight="8dp"
+        android:text="确定"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
+        app:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

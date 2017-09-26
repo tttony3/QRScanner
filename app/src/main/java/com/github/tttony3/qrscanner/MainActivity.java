@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         mScannerView = (ScannerView) findViewById(R.id.scanner_view);
+        mScannerView.setLaserFrameTopMargin(180);
+        mScannerView.setLaserFrameSize(320, 50);
         mScannerView.setDrawText("放入框内，自动扫描",true);
         mScannerView.setOnScannerCompletionListener(new OnScannerCompletionListener() {
             @Override
@@ -102,12 +104,21 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_flash) {
             isFlash = !isFlash;
             mScannerView.toggleLight(isFlash);
             return true;
+        } else if (id == R.id.action_input) {
+            Intent i = new Intent();
+            i.setClass(MainActivity.this, ResultActivity.class);
+            startActivity(i);
+            return true;
+        } else if (id == R.id.action_settings) {
+            Intent i = new Intent();
+            i.setClass(MainActivity.this, SettingActivity.class);
+            startActivity(i);
+            return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
